@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 import Character from '../js/Character';
 import Bowman from '../js/Bowman';
 import Daemon from '../js/Daemon';
@@ -9,9 +10,9 @@ import Zombie from '../js/Zombie';
 
 test('Персонаж не существует', () => {
   expect(() => {
-    const result = new Character('1111', 'Fairy');
+    const result = new Character('1', 'Fairy');
     return result;
-  }).toThrow();
+  }).toThrow('Ошибка! Некорректные данные');
 });
 
 test('new Bowman', () => {

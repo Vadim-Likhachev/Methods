@@ -42,7 +42,7 @@ test('Метод levelUp повышает уровень на 1 и изменя�
 test('Метод levelUp выбрасывает ошибку, если health = 0', () => {
   const recieved = new Zombie('Zomb', 'Zombie');
   recieved.health = 0;
-  expect(() => recieved.levelUp()).toThrow('нельзя повысить левел умершего');
+  expect(() => recieved.levelUp()).toThrow('Нельзя повысить левел умершего');
 });
 
 test('Метод damage(points) наносит урон)', () => {
